@@ -1,0 +1,42 @@
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:meta';
+
+$spacer: 4px;
+$grid-gutter: $spacer * 6;
+$font-family: 'Montserrat', sans-serif;
+
+$typography: (
+  'title-form': ('size': 1.65rem,
+    'weight': 700,
+    'line-height': 1.5,
+    'letter-spacing': .03125em,
+    'font-family': $font-family,
+    'text-transform': none),
+  'body-1': ('size': 1rem,
+    'weight': 400,
+    'line-height': 1.5,
+    'letter-spacing': .03125em,
+    'font-family': $font-family,
+    'text-transform': none),
+  'body-2': ('size': .875rem,
+    'weight': 400,
+    'line-height': 1.425,
+    'letter-spacing': .0178571429em,
+    'font-family': $font-family,
+    'text-transform': none),
+);
+
+@use 'vuetify/settings' with ($container-padding-x: 0 16px,
+  $body-font-family: $font-family,
+  $card-background: rgb(var(--v-theme-surface)),
+  $card-border: none,
+  $container-max-widths: ('xs': null,
+    'sm': null,
+    'md': 960px * 0.9375,
+    'lg': 1280px * 0.9375,
+    'xl': 1140px,
+    'xxl': 1140px,
+  ),
+  $typography: $typography)

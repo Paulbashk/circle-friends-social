@@ -1,0 +1,13 @@
+@use 'vuetify' with ($color-pack: false);
+
+$transitionDuration: .3s;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-duration: $transitionDuration;
+  transition-timing-function: linear;
+}

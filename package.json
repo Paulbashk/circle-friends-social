@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.1",
+    "@nuxt/fonts": "^0.10.0",
+    "@nuxt/icon": "^1.5.6",
+    "@nuxt/image": "^1.8.1",
+    "@pinia/nuxt": "^0.5.5",
+    "@vee-validate/nuxt": "^4.14.3",
+    "@vee-validate/yup": "^4.14.3",
+    "bcrypt": "^5.1.1",
+    "crypto-js": "^4.2.0",
+    "drizzle-orm": "^0.35.3",
+    "jsonwebtoken": "^9.0.2",
+    "maska": "^3.0.3",
+    "nuxt": "^3.13.2",
+    "nuxt-typed-router": "^3.7.0",
+    "pinia": "^2.2.4",
+    "uuid": "^11.0.2",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vuetify-nuxt-module": "^0.18.3",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/ws": "^8.5.12",
+    "drizzle-kit": "^0.26.2",
+    "sass-embedded": "^1.80.3"
+  }
+}
